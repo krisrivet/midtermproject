@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_name: MyString
+  year: 1
+  age: 1
+  team: MyString
+  games_played: 1
+  average_minutes: 9.99
+  field_goal_percentage: 9.99
+  three_point_percentage: 9.99
+  free_throw_percentage: 9.99
+  average_points: 9.99
+  average_assists: 9.99
+  average_rebounds: 9.99
+  average_steals: 9.99
+  average_blocks: 9.99
+  average_turnover: 9.99
+  average_personal_foul: 9.99
+
+two:
+  player_name: MyString
+  year: 1
+  age: 1
+  team: MyString
+  games_played: 1
+  average_minutes: 9.99
+  field_goal_percentage: 9.99
+  three_point_percentage: 9.99
+  free_throw_percentage: 9.99
+  average_points: 9.99
+  average_assists: 9.99
+  average_rebounds: 9.99
+  average_steals: 9.99
+  average_blocks: 9.99
+  average_turnover: 9.99
+  average_personal_foul: 9.99

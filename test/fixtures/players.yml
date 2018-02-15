@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_name: MyString
+  height: 1
+  weight: 1
+  born: 1
+  college: MyString
+
+two:
+  player_name: MyString
+  height: 1
+  weight: 1
+  born: 1
+  college: MyString

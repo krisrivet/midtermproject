@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Player name:</strong>
+  <%= @season_stat.player_name %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @season_stat.year %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @season_stat.age %>
+</p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @season_stat.team %>
+</p>
+
+<p>
+  <strong>Games played:</strong>
+  <%= @season_stat.games_played %>
+</p>
+
+<p>
+  <strong>Average minutes:</strong>
+  <%= @season_stat.average_minutes %>
+</p>
+
+<p>
+  <strong>Field goal percentage:</strong>
+  <%= @season_stat.field_goal_percentage %>
+</p>
+
+<p>
+  <strong>Three point percentage:</strong>
+  <%= @season_stat.three_point_percentage %>
+</p>
+
+<p>
+  <strong>Free throw percentage:</strong>
+  <%= @season_stat.free_throw_percentage %>
+</p>
+
+<p>
+  <strong>Average points:</strong>
+  <%= @season_stat.average_points %>
+</p>
+
+<p>
+  <strong>Average assists:</strong>
+  <%= @season_stat.average_assists %>
+</p>
+
+<p>
+  <strong>Average rebounds:</strong>
+  <%= @season_stat.average_rebounds %>
+</p>
+
+<p>
+  <strong>Average steals:</strong>
+  <%= @season_stat.average_steals %>
+</p>
+
+<p>
+  <strong>Average blocks:</strong>
+  <%= @season_stat.average_blocks %>
+</p>
+
+<p>
+  <strong>Average turnover:</strong>
+  <%= @season_stat.average_turnover %>
+</p>
+
+<p>
+  <strong>Average personal foul:</strong>
+  <%= @season_stat.average_personal_foul %>
+</p>
+
+<%= link_to 'Edit', edit_season_stat_path(@season_stat) %> |
+<%= link_to 'Back', season_stats_path %>

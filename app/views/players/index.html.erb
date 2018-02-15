@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Players</h1>
+<%= search_form_for @search do |f| %>
+  <div class = "field">
+    <%= f.label :player_name_cont, "Name contains" %>
+    <%= f.text_field :player_name_cont %>
+  </div>
+  <div class = "actions">
+    <%= f.submit "Search" %>
+  </div>
+<% end %>
+<%= link_to "Advanced Search", new_search_path %>
+<table>
+  <thead>
+    <tr>
+      <th>Player name</th>
+      <th>Height</th>
+      <th>Weight</th>
+      <th>Born</th>
+      <th>College</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @players.each do |player| %>
+      <tr>
+        <td><%= player.player_name %></td>
+        <td><%= player.height %></td>
+        <td><%= player.weight %></td>
+        <td><%= player.born %></td>
+        <td><%= player.college %></td>
+        <td><%= link_to 'Show', player %></td>
+        <td><%= link_to 'Edit', edit_player_path(player) %></td>
+        <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= will_paginate @players, inner_window: 1, outer_window: 0 %>

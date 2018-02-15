@@ -1,0 +1,37 @@
+<h1>Search Result</h1>
+<p><%= link_to 'Back', new_search_path %></p>
+
+<% if @search.search_players.empty? %>
+  <p>No Records Found</p>
+<%else%>
+  <% @search.search_players.each do |c| %>
+  <br>
+  <div class = "div">
+
+    <p>
+      <strong>Player name:</strong>
+      <%= c.player_name %>
+    </p>
+
+    <p>
+      <strong>Height:</strong>
+      <%= c.height %>
+    </p>
+
+    <p>
+      <strong>Weight:</strong>
+      <%= c.weight %>
+    </p>
+
+    <p>
+      <strong>Born:</strong>
+      <%= c.born %>
+    </p>
+
+    <p>
+      <strong>College:</strong>
+      <%= c.college %>
+    </p>
+  </div>
+<%end%>
+<%end%>

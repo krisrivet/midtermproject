@@ -1,0 +1,97 @@
+<%= form_with(model: season_stat, local: true) do |form| %>
+  <% if season_stat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(season_stat.errors.count, "error") %> prohibited this season_stat from being saved:</h2>
+
+      <ul>
+      <% season_stat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :player_name %>
+    <%= form.text_field :player_name, id: :season_stat_player_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.number_field :year, id: :season_stat_year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age, id: :season_stat_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :team %>
+    <%= form.text_field :team, id: :season_stat_team %>
+  </div>
+
+  <div class="field">
+    <%= form.label :games_played %>
+    <%= form.number_field :games_played, id: :season_stat_games_played %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_minutes %>
+    <%= form.text_field :average_minutes, id: :season_stat_average_minutes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :field_goal_percentage %>
+    <%= form.text_field :field_goal_percentage, id: :season_stat_field_goal_percentage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :three_point_percentage %>
+    <%= form.text_field :three_point_percentage, id: :season_stat_three_point_percentage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :free_throw_percentage %>
+    <%= form.text_field :free_throw_percentage, id: :season_stat_free_throw_percentage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_points %>
+    <%= form.text_field :average_points, id: :season_stat_average_points %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_assists %>
+    <%= form.text_field :average_assists, id: :season_stat_average_assists %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_rebounds %>
+    <%= form.text_field :average_rebounds, id: :season_stat_average_rebounds %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_steals %>
+    <%= form.text_field :average_steals, id: :season_stat_average_steals %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_blocks %>
+    <%= form.text_field :average_blocks, id: :season_stat_average_blocks %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_turnover %>
+    <%= form.text_field :average_turnover, id: :season_stat_average_turnover %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_personal_foul %>
+    <%= form.text_field :average_personal_foul, id: :season_stat_average_personal_foul %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

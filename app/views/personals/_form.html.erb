@@ -1,0 +1,72 @@
+<%= form_with(model: personal, local: true) do |form| %>
+  <% if personal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(personal.errors.count, "error") %> prohibited this personal from being saved:</h2>
+
+      <ul>
+      <% personal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :player_name %>
+    <%= form.text_field :player_name, id: :personal_player_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age, id: :personal_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :team %>
+    <%= form.text_field :team, id: :personal_team %>
+  </div>
+
+  <div class="field">
+    <%= form.label :college %>
+    <%= form.text_field :college, id: :personal_college %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_points %>
+    <%= form.text_field :average_points, id: :personal_average_points %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_assists %>
+    <%= form.text_field :average_assists, id: :personal_average_assists %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_rebounds %>
+    <%= form.text_field :average_rebounds, id: :personal_average_rebounds %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_steals %>
+    <%= form.text_field :average_steals, id: :personal_average_steals %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_blocks %>
+    <%= form.text_field :average_blocks, id: :personal_average_blocks %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_turnover %>
+    <%= form.text_field :average_turnover, id: :personal_average_turnover %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_personal_foul %>
+    <%= form.text_field :average_personal_foul, id: :personal_average_personal_foul %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

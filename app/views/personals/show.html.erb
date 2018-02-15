@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Player name:</strong>
+  <%= @personal.player_name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @personal.age %>
+</p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @personal.team %>
+</p>
+
+<p>
+  <strong>College:</strong>
+  <%= @personal.college %>
+</p>
+
+<p>
+  <strong>Average points:</strong>
+  <%= @personal.average_points %>
+</p>
+
+<p>
+  <strong>Average assists:</strong>
+  <%= @personal.average_assists %>
+</p>
+
+<p>
+  <strong>Average rebounds:</strong>
+  <%= @personal.average_rebounds %>
+</p>
+
+<p>
+  <strong>Average steals:</strong>
+  <%= @personal.average_steals %>
+</p>
+
+<p>
+  <strong>Average blocks:</strong>
+  <%= @personal.average_blocks %>
+</p>
+
+<p>
+  <strong>Average turnover:</strong>
+  <%= @personal.average_turnover %>
+</p>
+
+<p>
+  <strong>Average personal foul:</strong>
+  <%= @personal.average_personal_foul %>
+</p>
+
+<%= link_to 'Edit', edit_personal_path(@personal) %> |
+<%= link_to 'Back', personals_path %>

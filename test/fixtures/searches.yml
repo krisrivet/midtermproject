@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  keywords: MyString
+  min_height: 9.99
+  max_height: 9.99
+  min_weight: 9.99
+  max_height: 9.99
+  born: 1
+  college: MyString
+
+two:
+  keywords: MyString
+  min_height: 9.99
+  max_height: 9.99
+  min_weight: 9.99
+  max_height: 9.99
+  born: 1
+  college: MyString

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player_name: MyString
+  age: 1
+  team: MyString
+  college: MyString
+  average_points: 9.99
+  average_assists: 9.99
+  average_rebounds: 9.99
+  average_steals: 9.99
+  average_blocks: 9.99
+  average_turnover: 9.99
+  average_personal_foul: 9.99
+
+two:
+  player_name: MyString
+  age: 1
+  team: MyString
+  college: MyString
+  average_points: 9.99
+  average_assists: 9.99
+  average_rebounds: 9.99
+  average_steals: 9.99
+  average_blocks: 9.99
+  average_turnover: 9.99
+  average_personal_foul: 9.99

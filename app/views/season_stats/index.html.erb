@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Season Stats</h1>
+<%= search_form_for @search do |f| %>
+  <div class = "field">
+    <%= f.label :player_name_cont, "Name contains" %>
+    <%= f.text_field :player_name_cont %>
+  </div>
+  <div class = "actions">
+    <%= f.submit "Search" %>
+  </div>
+<% end %>
+<table>
+  <thead>
+    <tr>
+      <th>Player name</th>
+      <th>Year</th>
+      <th>Age</th>
+      <th>Team</th>
+      <th>Games played</th>
+      <th>Average minutes</th>
+      <th>Field goal percentage</th>
+      <th>Three point percentage</th>
+      <th>Free throw percentage</th>
+      <th>Average points</th>
+      <th>Average assists</th>
+      <th>Average rebounds</th>
+      <th>Average steals</th>
+      <th>Average blocks</th>
+      <th>Average turnover</th>
+      <th>Average personal foul</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @season_stats.each do |season_stat| %>
+      <tr>
+        <td><%= season_stat.player_name %></td>
+        <td><%= season_stat.year %></td>
+        <td><%= season_stat.age %></td>
+        <td><%= season_stat.team %></td>
+        <td><%= season_stat.games_played %></td>
+        <td><%= season_stat.average_minutes %></td>
+        <td><%= season_stat.field_goal_percentage %></td>
+        <td><%= season_stat.three_point_percentage %></td>
+        <td><%= season_stat.free_throw_percentage %></td>
+        <td><%= season_stat.average_points %></td>
+        <td><%= season_stat.average_assists %></td>
+        <td><%= season_stat.average_rebounds %></td>
+        <td><%= season_stat.average_steals %></td>
+        <td><%= season_stat.average_blocks %></td>
+        <td><%= season_stat.average_turnover %></td>
+        <td><%= season_stat.average_personal_foul %></td>
+        <td><%= link_to 'Show', season_stat %></td>
+        <td><%= link_to 'Edit', edit_season_stat_path(season_stat) %></td>
+        <td><%= link_to 'Destroy', season_stat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= will_paginate @season_stats, inner_window: 1, outer_window: 0 %>
